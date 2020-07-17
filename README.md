@@ -43,9 +43,9 @@ This repo hosts the ansible playbooks to deploy and configure HPE Container Plat
         - then run below command ( note: you may edit site.yml before running playbooks)
 
         
-        >ansible-playbooks -i hosts site.yml
+        >ansible-playbook -i hosts site.yml
         or
-        >ansible-playbooks -i hosts playbooks/controller.yml
+        >ansible-playbook -i hosts playbooks/controller.yml
         
 ### Current staus
 
@@ -56,6 +56,7 @@ Following playbooks are working:
         - import_playbool: playbooks/download-tools.yml
         - import_playbook: playbooks/controller.yml
         - import_playbook: playbooks/gateway.yml
+        - import_playbook: playbooks/bug_fixes.yml
         - import_playbook: playbooks/k8s-hosts.yml
         - import_playbook: playbooks/k8s-cluster.yml
         - import_playbook: playbooks/k8s-tenant.yml

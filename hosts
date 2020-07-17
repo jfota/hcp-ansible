@@ -1,23 +1,24 @@
 [local]
-localhost            ansible_connection=local ansible_python_interpreter=/usr/local/bin/python3
+localhost                 ansible_connection=local ansible_python_interpreter=/usr/bin/python3
 
 [allnodes]
-controller-node           ansible_host=10.1.10.20
-worker-node-1             ansible_host=10.1.10.21
-worker-node-2             ansible_host=10.1.10.22
-worker-node-3             ansible_host=10.1.10.23
-gateway-node              ansible_host=10.1.10.24
+m2-essps-vm66           ansible_host=10.163.168.121
+m2-essps-vm69              ansible_host=10.163.168.124
+m2-essps-vm70             ansible_host=10.163.168.125
+m2-essps-vm71             ansible_host=10.163.168.126
+m2-essps-vm72             ansible_host=10.163.168.127
 
 [controller]
-controller-node           ansible_host=10.1.10.20
+m2-essps-vm66           ansible_host=10.163.168.121
 
 [k8sclusternodes]
-worker-node-1             ansible_host=10.1.10.21
-worker-node-2             ansible_host=10.1.10.22
-worker-node-3             ansible_host=10.1.10.23
+m2-essps-vm70             ansible_host=10.163.168.125
+m2-essps-vm71             ansible_host=10.163.168.126
+m2-essps-vm72             ansible_host=10.163.168.127
 
 [gateway]
-gateway-node              ansible_host=10.1.10.24
+m2-essps-vm69              ansible_host=10.163.168.124
 
 [test]
-worker-node-3             ansible_host=10.1.10.23
+m2-essps-vm72             ansible_host=10.163.168.127
+

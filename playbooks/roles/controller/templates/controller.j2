@@ -23,6 +23,7 @@ parameters:
     username: {{ credentials.ssh.username }}
   config:
     url_bin_path: {{ controller.url_bin_path }}
+    controller_public_if: {{ controller.controller_public_if }}
     {% if common.proxy is defined  -%}
     proxy_url: {{ common.proxy.http }}
     {% endif -%}

@@ -8,4 +8,4 @@
     roles:
       - role: uninstall-bds
         vars:
-          uninstall: true
+          uninstall: yes
